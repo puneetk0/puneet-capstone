@@ -6,6 +6,10 @@ body{
     color: #E4D7E4;
     font-family: "Outfit", sans-serif;
 }
+*{
+    overflow-x: hidden;
+
+}
 .container{
     padding: 0 52px;
 }
@@ -18,11 +22,18 @@ nav .logo{
     font-size: 42px;
     font-family: "Source Serif 4", serif;
 }
+nav .logo:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
 nav a{
     color: #E4D7E4;
     text-decoration: none;
     font-size: 24px;
     font-family: "Domine", serif;
+}
+nav a:hover{
+    border-bottom: 1px solid white;
 }
 .links{
     display: flex;
@@ -64,6 +75,10 @@ nav a{
     width: 1/3;
     border-radius: 22px;
 }
+.image-container img:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
 .image-container h1{
     font-size: 20px;
     margin: 0;
@@ -88,6 +103,7 @@ nav a{
     line-height: 52px;
     letter-spacing: -2%;
     font-weight: 400;
+    overflow-y: hidden;
 }
 
 .get-touch{
@@ -114,6 +130,7 @@ nav a{
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
+    overflow-y: hidden;
 }
 
 .contact-form{
@@ -155,12 +172,19 @@ nav a{
     font-weight: 500;
     font-size: 15px;
 }
-
+.submit:hover{
+    background-color: rgb(199, 0, 199);
+    cursor: pointer;
+}
 .skip{
     color: rgba(255, 127, 255, 1);
     font-weight: 500;
+    cursor: pointer;
 }
 
+.skip:hover{
+    text-decoration: underline;
+}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -184,3 +208,111 @@ nav a{
     font-weight: 500;
     border-radius: 22px;
 }
+
+@media screen and (max-width: 520px) {
+    .container{
+        padding: 0 32px;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+    }
+    nav .logo{
+        font-size: 42px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .h-heading{
+        font-size: 60px;
+    }
+    .header{
+        margin-top: 80px;
+    }
+    .h-image img{
+        height: 300px;
+        border-radius: 16px;
+    }
+    .images-container{
+        justify-content: center;
+    }
+    .image-container img{
+        width: 100%;
+        height: 240px;
+        border-radius: 12px;
+    }
+    .main-text{
+        padding: 120px 16px;
+    }
+    .main-text h1{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .get-touch{
+        flex-direction: column;
+        
+    }
+    .get-touch .left{
+        width: 100%;
+    }
+    .get-touch h1{
+        overflow: hidden;
+        font-size: 42px;
+        line-height: 48px;
+        margin: 0;
+    }
+    .get-touch .right{
+        width: 100%;
+    }
+    .get-touch p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .contact-form{
+        margin-top: 160px;
+    }
+    .otp{
+        width: 48px;
+        height: 56px;
+    }
+    .footer h1{
+        font-size: 16px;
+    }
+    .contact-form{
+        margin-bottom: 160px;
+    }
+    .footer button{
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+    @media screen and (min-width: 520px) and (max-width: 1000px) {
+        nav .logo{
+            font-size: 42px;
+        }
+        nav a{
+            font-size: 16px;
+        }
+        .main-text{
+            padding: 120px 16px;
+        }
+        .images-container{
+            justify-content: center;
+        }
+        
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+        nav .logo{
+            font-size: 42px;
+        }
+        nav a{
+            font-size: 16px;
+        }
+        .main-text{
+            padding: 120px 16px;
+        }
+    }
