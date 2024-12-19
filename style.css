@@ -218,12 +218,13 @@ nav a:hover{
         justify-content: center;
         align-items: center;
         gap: 36px;
+        
     }
     nav .logo{
         font-size: 42px;
     }
     nav a{
-        font-size: 18px;
+        font-size: 16px;
     }
     .h-heading{
         font-size: 60px;
@@ -274,8 +275,8 @@ nav a:hover{
         margin-top: 160px;
     }
     .otp{
-        width: 48px;
-        height: 56px;
+        width: 42px;
+        height: 45px;
     }
     .footer h1{
         font-size: 16px;
@@ -287,9 +288,14 @@ nav a:hover{
         width: 100px;
         height: 36px;
         font-size: 12px;
+        border-radius: 16px !important;
+    }
+    .submit{
+        width: 300px;
+        border-radius: 16px;
     }
 }
-    @media screen and (min-width: 520px) and (max-width: 1000px) {
+    @media screen and (min-width: 520px) and (max-width: 920px) {
         nav .logo{
             font-size: 42px;
         }
@@ -305,7 +311,7 @@ nav a:hover{
         
     }
 
-    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    @media screen and (min-width: 920px) and (max-width: 1200px) {
         nav .logo{
             font-size: 42px;
         }
